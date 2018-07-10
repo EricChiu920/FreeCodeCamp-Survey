@@ -6,6 +6,35 @@
     <link rel="stylesheet" href="./survey.css">
   </head>
   <body>
-    <h1 id="title" class="center" >Let's improve</h1>
+    <h1 id="title" class="center" >Pizza Form</h1>
+    <div id="form-outer" class="center">
+      <p id="description">What kind of Pizza do you want?</p>
+      <form id="survey-form" action="index.html" method="post">
+        <div class="row">
+          <div class="survey-label">
+            <label for="name">* Name: </label>
+          </div>
+          <div class="survey-input">
+            <input type="text" name="name" placeholder="Enter your name" autofocus required>
+          </div>
+        </div>
+        <div class="row">
+          <div class="survey-label">
+            <label for="email">* Email: </label>
+          </div>
+          <div class="survey-input">
+            <input type="text" name="email" placeholder="Enter your email" required>
+          </div>
+        </div>
+        <div class="row">
+          <div class="survey-label">
+            <label for="age">Age: </label>
+          </div>
+          <div class="survey-input">
+            <input type="text" name="age" placeholder="Enter your age">
+          </div>
+        </div>
+      </form>
+    </div>
   </body>
 </html>

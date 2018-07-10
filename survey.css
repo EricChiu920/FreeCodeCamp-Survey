@@ -1,3 +1,38 @@
+body {
+  background-color: #a9d7d1;
+}
+
 .center {
   text-align: center;
+}
+
+.row {
+  padding: .5em
+}
+
+.survey-label {
+  display: inline-block;
+  width: 100px;
+  text-align: right;
+}
+
+.survey-input {
+  display: inline-block;
+}
+
+.survey-input input{
+  display: inline-block;
+  padding: 5px;
+  height: 1.5em;
+  width: 20em;
+}
+
+#form-outer {
+  background-color: #fafafa;
+  min-width: 400px;
+  max-width: 850px;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
