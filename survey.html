@@ -6,34 +6,123 @@
     <link rel="stylesheet" href="./survey.css">
   </head>
   <body>
-    <h1 id="title" class="center" >Pizza Form</h1>
-    <div id="form-outer" class="center">
+    <h1 id="title">Pizza Form</h1>
+    <div id="form-outer">
       <p id="description">What kind of Pizza do you want?</p>
       <form id="survey-form" action="index.html" method="post">
         <div class="row">
           <div class="survey-label">
-            <label for="name">* Name: </label>
+            <label id="name-label" for="name">* Name: </label>
           </div>
           <div class="survey-input">
-            <input type="text" name="name" placeholder="Enter your name" autofocus required>
+            <input id="name" class="long-input-style" type="text" name="name" placeholder="Enter your name" autofocus required>
           </div>
         </div>
         <div class="row">
           <div class="survey-label">
-            <label for="email">* Email: </label>
+            <label id="email-label" for="email">* Email: </label>
           </div>
           <div class="survey-input">
-            <input type="text" name="email" placeholder="Enter your email" required>
+            <input id="email" class="long-input-style" type="email" name="email" placeholder="Enter your email" required>
           </div>
         </div>
         <div class="row">
           <div class="survey-label">
-            <label for="age">Age: </label>
+            <label id="number-label" for="age">Age: </label>
           </div>
           <div class="survey-input">
-            <input type="text" name="age" placeholder="Enter your age">
+            <input class="long-input-style" id="number" type="number" name="age" placeholder="Enter your age" min="0" max="100">
           </div>
         </div>
+        <strong>What toppings do you want?</strong>
+        <div class="row">
+          <div class="survey-label">
+            <label for="pepperoni">Pepperoni</label>
+          </div>
+          <div class="survey-input">
+            <input class="short-input-style" type="checkbox" name="pepperoni" value="pepperoni">
+          </div>
+        </div>
+        <div class="row">
+          <div class="survey-label">
+            <label for="mushroom">Mushroom</label>
+          </div>
+          <div class="survey-input">
+            <input class="short-input-style" type="checkbox" name="mushroom" value="mushroom">
+          </div>
+        </div>
+        <div class="row">
+          <div class="survey-label">
+            <label for="bacon">Bacon</label>
+          </div>
+          <div class="survey-input">
+            <input class="short-input-style" type="checkbox" name="bacon" value="bacon">
+          </div>
+        </div>
+        <div class="row">
+          <div class="survey-label">
+            <label for="sausage">Sausage</label>
+          </div>
+          <div class="survey-input">
+            <input class="short-input-style" type="checkbox" name="sausage" value="sausage">
+          </div>
+        </div>
+        <div class="row">
+          <div class="survey-label">
+            <label for="chicken">Chicken</label>
+          </div>
+          <div class="survey-input">
+            <input class="short-input-style" type="checkbox" name="chicken" value="chicken">
+          </div>
+        </div>
+        <strong>Are you a pineapple person?</strong>
+        <div class="row">
+          <div class="radio-option">
+            <div class="radio-label">
+              <label for="pineapple">Yes</label>
+            </div>
+            <div class="survey-input">
+              <input type="radio" name="pineapple" value="yes" required>
+            </div>
+          </div>
+          <div class="radio-option">
+            <div class="radio-label">
+              <label for="pineapple">No</label>
+            </div>
+            <div class="survey-input">
+              <input type="radio" name="pineapple" value="no" required>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="survey-label">
+            <label for="date">When do you want your Pizza?</label>
+          </div>
+          <div class="survey-input">
+            <input class="long-input-style" type="date" name="date" required>
+          </div>
+        </div>
+        <div class="row">
+          <div class="survey-label">
+            <label for="credit card">Select your credit card:</label>
+          </div>
+          <div class="survey-input">
+            <select id="dropdown" class="select-option" name="credit card" required>
+              <option value="Visa">Visa</option>
+              <option value="Mastercard">Mastercard</option>
+              <option value="American Express">American Express</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div id="comment-label">
+            <label for="comment">Additonal requests or comments</label>
+          </div>
+          <div class="survey-input">
+            <textarea id="comment" name="comment" rows="6" cols="40"></textarea>
+          </div>
+        </div>
+        <input id="submit" type="submit" name="submit" value="Submit">
       </form>
     </div>
   </body>

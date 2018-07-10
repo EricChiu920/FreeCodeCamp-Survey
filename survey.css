@@ -1,8 +1,5 @@
 body {
   background-color: #a9d7d1;
-}
-
-.center {
   text-align: center;
 }
 
@@ -10,21 +7,48 @@ body {
   padding: .5em
 }
 
-.survey-label {
+.radio-option {
+  height: 25px;
+  width: 280px;
+  margin-left: 31%;
+}
+
+.radio-label {
   display: inline-block;
-  width: 100px;
-  text-align: right;
+  width: 30px;
+  padding: 5px;
 }
 
 .survey-input {
   display: inline-block;
 }
 
-.survey-input input{
+.survey-label {
+  display: inline-block;
+  width: 250px;
+  text-align: right;
+  padding: 5px;
+  margin-top: 10px
+}
+
+.survey-input .long-input-style {
+  display: inline-block;
+  text-align: left;
+  padding: 5px;
+  height: 20px;
+  width: 20em;
+}
+
+.survey-input .short-input-style {
+  display: inline-block;
+  margin-right: 260px;
+}
+
+.survey-input .select-option {
   display: inline-block;
   padding: 5px;
-  height: 1.5em;
-  width: 20em;
+  height: 35px;
+  width: 280px;
 }
 
 #form-outer {
@@ -33,6 +57,27 @@ body {
   max-width: 850px;
   width: 80%;
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  border-radius: 4px;
+}
+
+#submit {
+  font-size: 18px;
+  background-color: #59ace0;
+  height: 30px;
+  width: 120px;
+  border: 0px solid;
+  border-radius: 3px;
+  color: #fafafa;
+  text-shadow: 0px 1px 2px rgba(150, 150, 150, 1);
+}
+
+#comment {
+  display: inline-block;
+  padding: 5px;
+}
+
+#comment-label {
+ margin: 5px;
 }
